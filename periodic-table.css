@@ -1,0 +1,111 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+#wrapper {
+	width: 970px;
+	margin: 0 auto;
+}
+
+ul {
+	list-style-type: none;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(19, 50px);
+	grid-auto-rows: 70px;
+}
+
+.first {
+	grid-template-areas: "l b . . . . . . . . . . . . . . . . y";
+}
+
+.top {
+	grid-template-areas: "l b b . . . . . . . . . . y y y y y y" "l b b . . . . . . . . . . y y y y y y";
+}
+
+.mid {
+	grid-template-areas: "l b b c c c c c c c c c c y y y y y y" "l b b c c c c c c c c c c y y y y y y"
+		"l b b c c c c c c c c c c y y y y y y" "l b b c c c c c c c c c c y y y y y y";
+}
+
+.bottom {
+	grid-template-areas: "l l l g g g g g g g g g g g g g g . ." "l l l g g g g g g g g g g g g g g . .";
+}
+
+.lbl {
+	grid-area: l;
+}
+
+.lbl li,
+.lbl span,
+.labelx span {
+	border: none !important;
+	color: red;
+}
+
+.blue {
+	grid-area: b;
+}
+
+.blue li {
+	background-color: #6892ff;
+}
+
+.gold {
+	grid-area: y;
+}
+
+.gold li {
+	background-color: #ffcd00;
+}
+
+.coral {
+	grid-area: c;
+}
+
+.coral li {
+	background-color: #ff8e93;
+}
+
+.green {
+	grid-area: g;
+}
+
+.green li {
+	background-color: #00d821;
+}
+
+.col {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, 50px);
+	grid-auto-rows: 70px;
+	margin: 0px;
+}
+
+.grid span,
+.grid li {
+	display: block;
+	text-align: center;
+	border: 1px solid black;
+	margin: 3px;
+	font-size: 12px;
+	padding-top: 7px;
+}
+
+.span3 span {
+	display: block;
+	width: 150px;
+	height: 50px;
+	padding-top: 20px;
+}
+
+.grid h4 {
+	font-size: 16px;
+}
+
+.grid span i {
+	float: right;
+}
